@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calender - Day view</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="container clearfix">
+			<div class="button-group">
+				<a id="today" class="btn btn--quad btn__raised" href="#currentTimeMarker">Today</a>
+				<a id="previous_day" class="btn btn--round btn__raised" href="#calender">&lt;</a>
+				<a id="next_day" class="btn btn--round btn__raised" href="#calender">&gt;	</a>
+			</div>
+			<div id="renderDateTime"></div>
+		</div>
+	</div>
+	<div id="calender">		
+		<table>
+			<tbody>
+				<tr height="1">
+					<td style="width: 30px;"></td>
+					<td colspan="1" id="markers"></td>
+				</tr>
+				<tr id="dayView">
+					<td id="time_lable"></td>
+					<td id="events"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<script src="jquery.min.js"></script>
+	<script src="moment.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
